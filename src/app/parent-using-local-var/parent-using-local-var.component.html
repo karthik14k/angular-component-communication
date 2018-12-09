@@ -1,0 +1,11 @@
+<p>
+  parent-using-local-var works!
+</p>
+
+<input [(ngModel)] = "child.inputStr1">
+<input [(ngModel)] = "child.inputStr2">
+<button (click)= "child.concat()">
+Concat String
+</button>
+<p>Concated String: {{child.concatinatedStr}}</p>
+<app-child-using-local-var #child></app-child-using-local-var>

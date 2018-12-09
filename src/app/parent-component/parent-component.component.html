@@ -1,0 +1,7 @@
+<p>
+  Using @Input and @Output
+  parent-component works! -->> {{parentMessage}}
+</p>
+  <input [(ngModel)]="parentMessage">
+  <app-child-component [childMessage]="parentMessage" (parentMessage)="updateFromChild($event)"></app-child-component>
+
